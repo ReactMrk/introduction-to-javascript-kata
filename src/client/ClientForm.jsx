@@ -76,4 +76,4 @@ const ClientForm = ({ setClients }) => {
   )
 }
 
-export default ClientForm
+export default ClientForm;

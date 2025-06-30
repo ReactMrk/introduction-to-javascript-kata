@@ -2,7 +2,7 @@ Create and push a new branch using **git checkout -b kata-javascript-name** and 
 
 # **Client management with react and hooks**
 
-The idea of our company is to create a large application to manage clients. Therefore, Client management, from the first session, has been redeveloped using React due to its scalability.
+Our company has created a React app to handle the customers.
 
 Use correct node version: **nvm use**
 
@@ -10,12 +10,14 @@ Install dependencies: **npm install**
 
 Run app: **npm run dev**
 
-**Tips:** commented code is the skeleton to complete the exercises.
-
-**Info:** it's not a problem that clients are lost when website is reloaded because in a future an API will be used to get them.
+**Info:** it's not a problem that customers are lost when website is reloaded because in a future an API will be used to get them.
 
 **Exercise 1.**
+In the last push, the imports/exports were broken. If possible, could you fix them by modifying only the imports? Please modify the exports only if it's not possible to fix the issue through the imports.
 
-Client Management System is mind to be a large application, so in a future new react compoments related with clients will be added. Variables client and setClient will be the parameters for these new react components. In order to avoid these variables being passed again and again from parent to children, principal engineer suggested you to create a context.
+**Exercise 1.1**
+Could you use export default for all React components?
 
-**To create the context, modify src/ClientContext.js file**
+**Exercise 2**
+ClientList.jsx could be refectored using an array method directly in the return. Could you give it a try?
+
