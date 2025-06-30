@@ -1,4 +1,4 @@
-Create and push a new branch using **git checkout -b kata-2a-your-name** and **git push -u origin kataa-2-your-name**
+Create and push a new branch using **git checkout -b kata-javascript-name** and **git push -u origin kata-javascript-name**
 
 # **Client management with react and hooks**
 
