@@ -1,55 +1,5 @@
 import { useState } from 'react';
 
-let initalFormValue = {
-  name: '',
-  email: '',
-  phone: '',
-  address: '',
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case 'SET_NAME': {
-      return {
-        name: action.value,
-        email: state.email,
-        phone: state.phone,
-        address: state.address
-      };
-    }
-    case 'SET_EMAIL': {
-      return {
-        name: state.name,
-        email: action.value,
-        phone: state.phone,
-        address: state.address
-      };
-    }
-    case 'SET_PHONE': {
-      return {
-        name: state.name,
-        email: state.email,
-        phone: action.value,
-        address: state.address
-      };
-    }
-    case 'SET_ADDRESS': {
-      return {
-        name: state.name,
-        email: state.email,
-        phone: state.phone,
-        address: action.value
-      };
-    }
-    case 'CLEAR': {
-      return initalFormValue;
-    }
-    default:
-      return state;
-  }
-}
-
-
 const CustomerForm = ({ setCustomers }) => {
   const [name, setName] = useState('');
   const [email, seEmail] = useState('');
