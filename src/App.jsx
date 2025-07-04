@@ -1,13 +1,13 @@
 import './App.css';
-import ClientManagement from "./client/ClientManagement";
+import CustomerManagement from './customer/CustomerManagement';
 
 const App = () => {
   return (
     <div className="container">
-      <h1>Client Management System</h1>
-      <ClientManagement />
+      <h1>Customer Management System</h1>
+      <CustomerManagement />
     </div>
   )
 };
 
-export default App
+export default App;

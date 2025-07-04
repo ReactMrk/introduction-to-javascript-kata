@@ -1,10 +1,10 @@
 import { useReducer } from 'react';
 
 const initalFormValue = {
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
+  name: '',
+  email: '',
+  phone: '',
+  address: '',
 };
 const reducer = (state, action) => {
   switch (action.type) {
@@ -32,16 +32,16 @@ const reducer = (state, action) => {
         address: action.value
       }
     }
-    case 'CLEAR' : {
+    case 'CLEAR': {
       return initalFormValue;
     }
   }
 };
 
-const ClientForm = ({ setClients }) => {
+const CustomerForm = ({ setCustomers }) => {
   const [form, dispatchForm] = useReducer(reducer, initalFormValue);
   const submitEmployee = () => {
-    setClients(prev => [
+    setCustomers(prev => [
       ...prev,
       {
         name: form.name,
@@ -54,14 +54,14 @@ const ClientForm = ({ setClients }) => {
   };
   return (
     <div className="form">
-      <input type="text" placeholder="Name" onChange={value => dispatchForm({ type: 'SET_NAME', value: value.target.value})} value={form.name} />
-      <input type="email" placeholder="Email" onChange={value => dispatchForm({ type: 'SET_EMAIL', value: value.target.value})} value={form.email} />
-      <input type="tel" placeholder="Phone" onChange={value => dispatchForm({ type: 'SET_PHONE', value: value.target.value})} value={form.phone} />
-      <input type="text" placeholder="Address" onChange={value => dispatchForm({ type: 'SET_ADDRESS', value: value.target.value})} value={form.address} />
-      <button onClick={() => submitEmployee()}>Add client</button>
+      <input type="text" placeholder="Name" onChange={value => dispatchForm({ type: 'SET_NAME', value: value.target.value })} value={form.name} />
+      <input type="email" placeholder="Email" onChange={value => dispatchForm({ type: 'SET_EMAIL', value: value.target.value })} value={form.email} />
+      <input type="tel" placeholder="Phone" onChange={value => dispatchForm({ type: 'SET_PHONE', value: value.target.value })} value={form.phone} />
+      <input type="text" placeholder="Address" onChange={value => dispatchForm({ type: 'SET_ADDRESS', value: value.target.value })} value={form.address} />
+      <button onClick={() => submitEmployee()}>Add customer</button>
       <button onClick={() => dispatchForm({ type: 'CLEAR' })}>Clear</button>
     </div>
   )
 }
 
-export default ClientForm
+export default CustomerForm;
