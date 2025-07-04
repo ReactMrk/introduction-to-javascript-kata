@@ -1,65 +1,38 @@
-import { useReducer } from 'react';
-
-const initalFormValue = {
-  name: '',
-  email: '',
-  phone: '',
-  address: '',
-};
-const reducer = (state, action) => {
-  switch (action.type) {
-    case 'SET_NAME': {
-      return {
-        ...state,
-        name: action.value
-      }
-    }
-    case 'SET_EMAIL': {
-      return {
-        ...state,
-        email: action.value
-      }
-    }
-    case 'SET_PHONE': {
-      return {
-        ...state,
-        phone: action.value
-      }
-    }
-    case 'SET_ADDRESS': {
-      return {
-        ...state,
-        address: action.value
-      }
-    }
-    case 'CLEAR': {
-      return initalFormValue;
-    }
-  }
-};
+import { useState } from 'react';
 
 const CustomerForm = ({ setCustomers }) => {
-  const [form, dispatchForm] = useReducer(reducer, initalFormValue);
+  const [name, setName] = useState('');
+  const [email, seEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [address, setAddress] = useState('');
+
+  const clearInputs = () => {
+    setName('');
+    seEmail('');
+    setPhone('');
+    setAddress('');
+  };
+
   const submitEmployee = () => {
     setCustomers(prev => [
       ...prev,
       {
-        name: form.name,
-        email: form.email,
-        phone: form.phone,
-        address: form.address
+        name: name,
+        email: email,
+        phone: phone,
+        address: address
       }
     ]);
-    dispatchForm({ type: 'CLEAR' });
+    clearInputs();
   };
   return (
     <div className="form">
-      <input type="text" placeholder="Name" onChange={value => dispatchForm({ type: 'SET_NAME', value: value.target.value })} value={form.name} />
-      <input type="email" placeholder="Email" onChange={value => dispatchForm({ type: 'SET_EMAIL', value: value.target.value })} value={form.email} />
-      <input type="tel" placeholder="Phone" onChange={value => dispatchForm({ type: 'SET_PHONE', value: value.target.value })} value={form.phone} />
-      <input type="text" placeholder="Address" onChange={value => dispatchForm({ type: 'SET_ADDRESS', value: value.target.value })} value={form.address} />
+      <input type="text" placeholder="Name" onChange={value => setName(value.target.value)} value={name} />
+      <input type="email" placeholder="Email" onChange={value => seEmail(value.target.value)} value={email} />
+      <input type="tel" placeholder="Phone" onChange={value => setPhone(value.target.value)} value={phone} />
+      <input type="text" placeholder="Address" onChange={value => setAddress(value.target.value)} value={address} />
       <button onClick={() => submitEmployee()}>Add customer</button>
-      <button onClick={() => dispatchForm({ type: 'CLEAR' })}>Clear</button>
+      <button onClick={() => clearInputs()}>Clear</button>
     </div>
   )
 }
