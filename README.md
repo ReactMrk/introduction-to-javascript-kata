@@ -2,7 +2,7 @@ Create and push a new branch using **git checkout -b kata-javascript-name** and 
 
 # **Client management with react and hooks**
 
-The idea of our company is to create a large application to manage clients. Therefore, Client management, from the first session, has been redeveloped using React due to its scalability.
+Our company has created a React app to manage our customers.
 
 Use correct node version: **nvm use**
 
@@ -10,12 +10,25 @@ Install dependencies: **npm install**
 
 Run app: **npm run dev**
 
-**Tips:** commented code is the skeleton to complete the exercises.
-
-**Info:** it's not a problem that clients are lost when website is reloaded because in a future an API will be used to get them.
+**Info:** it's not a problem that customers are lost when website is reloaded because in a future an API will be used to get them.
 
 **Exercise 1.**
+In the last push, the imports/exports were broken. If possible, could you fix them by modifying only the imports? Please, modify the exports only if it's not possible to fix the issue through the imports.
 
-Client Management System is mind to be a large application, so in a future new react compoments related with clients will be added. Variables client and setClient will be the parameters for these new react components. In order to avoid these variables being passed again and again from parent to children, principal engineer suggested you to create a context.
+**Exercise 1.1**
+Could you use export default for all React components?
 
-**To create the context, modify src/ClientContext.js file**
+**Exercise 2**
+CustomerForm.jsx is not working correctly. Currently, the previous values of customers is returned with the last customer added, which is wrong. setCustomers callback function requires a new array. Use array methods: forEach and push.  
+
+**Exercise 2.1**
+Use array destructoring and implicit return to return the new array with the last customer added. No array method is allowed in this exercise.
+
+**Exercise 3**
+In CustomerForm.jsx create a new button called "Clear" under "Add customer" button. This button should clear all inputs when is clicked.
+
+**Exercise 3.1**
+Reuse the functionality used on "Clear" button to clear the inputs when a new customer is submitted.
+
+**Exercise 4**
+Refactor CustomerList.jsx using an array method directly in the return.
