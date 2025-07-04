@@ -19,5 +19,5 @@ In the last push, the imports/exports were broken. If possible, could you fix th
 Could you use export default for all React components?
 
 **Exercise 2**
-ClientList.jsx could be refectored using an array method directly in the return. Could you give it a try?
+CustomerList.jsx could be refectored using an array method directly in the return. Could you give it a try?
 
