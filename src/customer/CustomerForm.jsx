@@ -6,24 +6,16 @@ const CustomerForm = ({ setCustomers }) => {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
 
-  const clearInputs = () => {
-    setName('');
-    seEmail('');
-    setPhone('');
-    setAddress('');
-  };
-
   const submitEmployee = () => {
-    setCustomers(prev => [
-      ...prev,
-      {
+    setCustomers(prev => {
+      prev.push({
         name: name,
         email: email,
         phone: phone,
         address: address
-      }
-    ]);
-    clearInputs();
+      });
+      return prev;
+    });
   };
   return (
     <div className="form">
@@ -32,7 +24,6 @@ const CustomerForm = ({ setCustomers }) => {
       <input type="tel" placeholder="Phone" onChange={value => setPhone(value.target.value)} value={phone} />
       <input type="text" placeholder="Address" onChange={value => setAddress(value.target.value)} value={address} />
       <button onClick={() => submitEmployee()}>Add customer</button>
-      <button onClick={() => clearInputs()}>Clear</button>
     </div>
   )
 }
