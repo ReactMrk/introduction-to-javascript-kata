@@ -31,4 +31,4 @@ In CustomerForm.jsx create a new button called "Clear" under "Add customer" butt
 Reuse the functionality used on "Clear" button to clear the inputs when a new customer is submitted.
 
 **Exercise 4**
-Refactor CustomerList.jsx using an array method directly in the return.
+Refactor CustomerList.jsx using an implicit return for function CustomerList and using array method called map on customers variable.
