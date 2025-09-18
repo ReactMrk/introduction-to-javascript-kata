@@ -14,6 +14,22 @@ const CustomerForm = ({ setCustomers }) => {
   };
 
   const submitEmployee = () => {
+    // Solution Exercise 2
+    // setCustomers(prev => {
+    //   let newCustomer = [];
+    //   for (let i = 0; i < prev.length; ++i) {
+    //     newCustomer.push(prev[i]);
+    //   }
+    //   newCustomer.push({
+    //     name: name,
+    //     email: email,
+    //     phone: phone,
+    //     address: address
+    //   });
+    //   return newCustomer;
+    // });
+
+    // Solution Exercise 2.1
     setCustomers(prev => [
       ...prev,
       {
