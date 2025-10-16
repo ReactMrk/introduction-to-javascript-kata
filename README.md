@@ -12,8 +12,6 @@ Run app: **npm run dev**
 
 **Info:** it's not a problem that customers are lost when website is reloaded because in a future an API will be used to get them.
 
-![Demo](https://github.com/ReactMrk/lifecycle-kata/blob/main/src/assets/hooks-kata-solution-kata.gif?raw=true)
-
 **Exercise 1.**
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
@@ -45,3 +43,5 @@ Reuse the functionality used on "Clear" button to clear the inputs when a new cu
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#function_body
 
 Refactor CustomerList.jsx using an implicit return for function CustomerList and using array method called map on customers variable.
+
+![Demo](https://github.com/ReactMrk/lifecycle-kata/blob/main/src/assets/hooks-kata-solution-kata.gif?raw=true)
