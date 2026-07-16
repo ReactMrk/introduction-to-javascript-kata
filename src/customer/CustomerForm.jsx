@@ -25,7 +25,7 @@ const CustomerForm = ({ setCustomers }) => {
       <input type="text" placeholder="Address" onChange={value => setAddress(value.target.value)} value={address} />
       <button onClick={() => submitEmployee()}>Add customer</button>
     </div>
-  )
-}
+  );
+};
 
 export default CustomerForm;

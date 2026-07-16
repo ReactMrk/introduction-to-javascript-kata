@@ -24,7 +24,7 @@ In the last push, the imports/exports were broken. If possible, could you fix th
 Could you use export default for all React components?
 
 **Exercise 2**
-CustomerForm.jsx is not working correctly. Currently, the previous values of customers is returned with the last customer added, which is wrong. setCustomers callback function requires a new array. Use array methods: forEach and push.  
+CustomerForm.jsx is not working correctly. Currently, the previous values of customers is returned with the last customer added, which is wrong. setCustomers callback function requires a new array. Use array methods: forEach and push.
 
 **Exercise 2.1**
 

@@ -9,5 +9,5 @@ let CustomerManagement = () => {
       <CustomerForm setCustomers={setCustomers} />
       <CustomerList customers={customers} />
     </>
-  )
+  );
 };
