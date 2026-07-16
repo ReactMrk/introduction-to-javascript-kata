@@ -9,7 +9,7 @@ const CustomerManagement = () => {
       <CustomerForm setCustomers={setCustomers} />
       <CustomerList customers={customers} />
     </>
-  )
+  );
 };
 
 export default CustomerManagement;

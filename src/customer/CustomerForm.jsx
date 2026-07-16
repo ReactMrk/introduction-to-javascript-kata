@@ -50,7 +50,7 @@ const CustomerForm = ({ setCustomers }) => {
       <button onClick={() => submitEmployee()}>Add customer</button>
       <button onClick={() => clearInputs()}>Clear</button>
     </div>
-  )
-}
+  );
+};
 
 export default CustomerForm;

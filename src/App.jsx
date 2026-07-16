@@ -7,7 +7,7 @@ const App = () => {
       <h1>Customer Management System</h1>
       <CustomerManagement />
     </div>
-  )
+  );
 };
 
 export default App;
