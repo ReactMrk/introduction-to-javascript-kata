@@ -6,7 +6,7 @@ const CustomerForm = ({ setCustomers }) => {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
 
-  const submitEmployee = () => {
+  const submitCustomer = () => {
     setCustomers(prev => {
       prev.push({
         name: name,
@@ -23,7 +23,7 @@ const CustomerForm = ({ setCustomers }) => {
       <input type="email" placeholder="Email" onChange={value => setEmail(value.target.value)} value={email} />
       <input type="tel" placeholder="Phone" onChange={value => setPhone(value.target.value)} value={phone} />
       <input type="text" placeholder="Address" onChange={value => setAddress(value.target.value)} value={address} />
-      <button onClick={() => submitEmployee()}>Add customer</button>
+      <button onClick={() => submitCustomer()}>Add customer</button>
     </div>
   );
 };
