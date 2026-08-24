@@ -1,8 +1,7 @@
 const CustomerList = ({ customers }) => {
   let customerItems = [];
 
-  for (let i = 0; i < customers.length; i++) {
-    const customer = customers[i];
+  for (const customer of customers) {
     customerItems.push(
       <li key={customer.email}>
         <strong>{customer.name}</strong>
