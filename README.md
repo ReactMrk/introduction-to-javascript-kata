@@ -30,7 +30,7 @@ For the purpose of this exercise, all you need to know is that the problem is be
 
 Using array methods forEach and push, modify updateCustomerList to create a new array which contains the elements from originalCustomerList (the array that's passed into it) and add the new customer to the array and return the new array.
 
-Note: The reason why this behavior is needed will be explained in the React session, where we will learn how React hooks work.
+Note: The reason why this behavior is needed will be explained in the future React session, where we will learn how React hooks work.
 
 **Exercise 2.1**
 
