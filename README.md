@@ -25,9 +25,10 @@ Could you use export default for all React components?
 
 **Exercise 2**
 CustomerForm.jsx is not working correctly. 
-When we add a customer the list of customers is not shown. This is because the method updateCustomerList is modifying the existing array instead of creating a new one.
+When we add a customer the list of customers is not shown. 
+For the purpose of this exercise, all you need to know is that the problem is because the method updateCustomerList is modifying the existing array instead of creating a new one.
 
-Using array methods forEach and push, modify updateCustomerList to create a new array, based on the one provided by parameter, add the new customer to the array and return the new array.
+Using array methods forEach and push, modify updateCustomerList to create a new array which contains the elements from originalCustomerList (the array that's passed into it) and add the new customer to the array and return the new array.
 
 Note: The reason why this behavior is needed will be explained in the React session, where we will learn how React hooks work.
 
