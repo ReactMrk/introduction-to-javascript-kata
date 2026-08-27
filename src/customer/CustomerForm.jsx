@@ -5,18 +5,25 @@ const CustomerForm = ({ setCustomers }) => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
-
   const submitCustomer = () => {
-    setCustomers(prev => {
-      prev.push({
-        name: name,
-        email: email,
-        phone: phone,
-        address: address
+      setCustomers(prev => {
+          return updateCustomerList(prev);
       });
-      return prev;
-    });
   };
+  
+    // For the purpose of this kata ignore the code above this comment. 
+    // This will be covered in the next session with React hooks
+    const updateCustomerList = (originalCustomerList) => {
+        originalCustomerList.push({
+            name: name,
+            email: email,
+            phone: phone,
+            address: address
+        });
+        return originalCustomerList;
+    }
+
+
   return (
     <div className="form">
       <input type="text" placeholder="Name" onChange={value => setName(value.target.value)} value={name} />
