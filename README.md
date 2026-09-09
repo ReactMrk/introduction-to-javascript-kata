@@ -22,12 +22,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/exp
 
 In the last push, the imports/exports were broken. If possible, could you fix them by modifying only the imports? Please, modify the exports only if it's not possible to fix the issue through the imports.
 
-**Exercise 1.1**
+**Exercise 1.1** <br />
 Could you use export default for all React components?
 
 <br />
 
-**Exercise 2**
+**Exercise 2** <br />
 `CustomerForm.jsx` is not working correctly. 
 When we add a new customer, the list of customers is not shown. 
 For the purpose of this exercise, all you need to know is that the problem is caused because the method `updateCustomerList()` is modifying the existing array instead of creating a new one.
@@ -44,10 +44,10 @@ Use array destructuring and implicit return to return the new array with the las
 
 <br />
 
-**Exercise 3**
+**Exercise 3** <br />
 In `CustomerForm.jsx`, create a new button called "Clear" under the "Add customer" button. This button should clear all inputs when clicked.
 
-**Exercise 3.1**
+**Exercise 3.1** <br />
 Reuse the functionality used on "Clear" button to clear the inputs when a new customer is submitted.
 
 <br />
